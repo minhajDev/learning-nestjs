@@ -71,6 +71,7 @@ export class ProductsService {
     if (result.deletedCount === 0) {
       throw new NotFoundException('Could not find product.');
     }
+    return result;
   }
 
   // Helper function to find a product in the database by ID
